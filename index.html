@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>My Curriculum</title>
 </head>
-<body>
-    <section id="about-project">
-        <div id="initial-window" class="initial-window">
-            <div class="video-overlay">
-                <h1>Apresentação do projeto</h1>
-            </div>
-            <video src="" controls pause muted alt="Este vídeo é uma breve apresentação do meu projeto"></video>
-        </div>
-    </section>
-    <section id="about-me">
-        <button id="about-me-button" class="about-me-button">Sobre Mim</button>
-        <button id="projects-button" class="projects-button">Projetos</button>
-    </section>
 
+<body>
+    <div id="initial-window" class="initial-window">
+        <section id="about-me">
+            <img src="./assets/Imgs/Foto Lázaro-.png" alt="foto-de-perfil-Lázaro">
+            <div id="texts" class="texts">
+                <h1>Lázaro Yoseph</h1>
+                <p>Desenvolvedor Front-End</p>
+                <h2>Sobre Mim</h2>
+                <p>Sou desenvolvedor que busca criar experiências web dinâmicas, modernas e responsivas.
+                    Tenho sólida base em HTML, CSS e JavaScript, e estou constantemente buscando aprender novas
+                    tecnologias e aprimorar minhas habilidades como programador.
+                    Estou em busca da minha primeira oportunidade na área de desenvolvimento, com grande motivação para
+                    aprender,
+                    evoluir e contribuir com projetos desafiadores. Além do aspecto técnico, trago proatividade,
+                    facilidade de adaptação e disposição para colaborar em equipe, sempre focado em entregar soluções de
+                    qualidade.
+                </p>
+
+            </div>
+        </section>
+    </div>
+    <div id="school-window" style="display: none;">
+        <section id="about-school">
+            <h2>Escolaridade</h2>
+            <p>Aqui vão as informações de escolaridade...</p>
+        </section>
+    </div>
+    <div id="projects-window" style="display: none;">
+        <section id="about-projects">
+            <h2>Projetos</h2>
+            <button id="Pj-1">
+                <img src="./assets/Imgs/Foto-Projeto-starbucks.png" alt="Starbucks Page">
+                <span>Starbucks</span>
+            </button>
+            <button id="Pj-2">
+                <img src="./assets/Imgs/Foto-Projeto-WeCare.png" alt="WeCare Page">
+                <span>WeCare</span>
+            </button>
+            <button id="Pj-3">
+                <img src="./assets/Imgs/Foto-Projeto-EasyShopping.png" alt="EasyShopping Page">
+                <span>EasyShopping</span>
+            </button>
+            <button id="Pj-4">
+                <img src="./assets/Imgs/Foto-Projeto-conversor-moedas.png" alt="Conversor de Moedas Page">
+                <span>Conversor de Moedas</span>
+            </button>
+            <button id="Pj-5">
+                <img src="./assets/Imgs/Foto-Projeto-sorteio_random.png" alt="Sorteador Page">
+                <span>Sorteador</span>
+            </button>
+        </section>
+    </div>
+    <div id="buttons">
+        <button id="exp-School">Experiências & Escolaridade</button>
+        <button id="projects-button" class="projects-button">Projetos</button>
+        <button id="back-button" style="display: none;">Voltar</button>
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
