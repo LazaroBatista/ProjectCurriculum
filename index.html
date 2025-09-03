@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,11 +18,31 @@
 
 <body>
     <div id="initial-window" class="initial-window">
-        <section id="about-me">
-            <img src="./assets/Imgs/Foto Lázaro-.png" alt="foto-de-perfil-Lázaro">
+        <div id="about-container">
+            <section id="about-me">
+                <div id="about-me-right">
+                    <img src="./assets/Imgs/Foto Lázaro-.png" alt="foto-de-perfil-Lázaro">
+                    <h1>Lázaro Yoseph</h1>
+                    <p>Desenvolvedor Front-End</p>
+                    <div id="contacts">
+                        <br>
+                        <h2>Contatos</h2>
+                        <p>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp: (88) 99626-2734.<br>
+                            <i class="fa-solid fa-envelope"></i>
+                            E-mail: lazaroyoseph5@gmail.com.
+                        </p>
+                        <a href="https://github.com/LazaroBatista" target="_blank" title="GitHub">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <br><a href="https://www.linkedin.com/in/lazaro-yoseph" target="_blank" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
             <div id="texts" class="texts">
-                <h1>Lázaro Yoseph</h1>
-                <p>Desenvolvedor Front-End</p>
                 <h2>Sobre Mim</h2>
                 <p>Sou desenvolvedor que busca criar experiências web dinâmicas, modernas e responsivas.
                     Tenho sólida base em HTML, CSS e JavaScript, e estou constantemente buscando aprender novas
@@ -32,15 +53,58 @@
                     facilidade de adaptação e disposição para colaborar em equipe, sempre focado em entregar soluções de
                     qualidade.
                 </p>
-
             </div>
-        </section>
+        </div>
     </div>
     <div id="school-window" style="display: none;">
-        <section id="about-school">
-            <h2>Escolaridade</h2>
-            <p>Aqui vão as informações de escolaridade...</p>
-        </section>
+        <div id="about-container-school">
+            <section id="about-school">
+                <div id="about-school-info">
+                    <h2>Formação</h2>
+                    <p>&lt;&gt; 2016 - 2018</p>
+                    <p>Ensino médio.</p>
+                    <p>Escola de Ensino médio Presidente Geisel - Polivalente. &lt;/&gt;</p>
+                    <br>
+                    <br>
+                    <p>{ Cursando </p>
+                    <p>Bacharelado em Sistemas de informação.</p>
+                    <p>7.º Semestre. </p>
+                    <p>Uninassau São Miguel - FJN. }</p>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Cursos</h2>
+                    <p> &lt;&gt; Agosto 2017 - Novembro 2018</p>
+                    <p>Curso Técnico em Redes de Computadores (1000 horas).</p>
+                    <p>Pronatec. &lt;/&gt;</p>
+                    <br>
+                    <p>{ Cursando </p>
+                    <p>Programador FullStack.</p>
+                    <p>DevClub. }</p>
+                </div>
+                <div id="about-experience">
+                    <h2>Experiências</h2>
+                    <p>&lt;&gt; Maio 2019 - Setembro 2019</p>
+                    <p>Instrutor de Laboratório de Informática.</p>
+                    <p>Microlins Juazeiro. &lt;/&gt;</p>
+                    <br>
+                    <br>
+                    <p>&lt;&gt; Agosto 2020 - Agosto 2022</p>
+                    <p>Estágio Suporte Técnico.</p>
+                    <p>Instituto Nacional do Seguro Social - INSS. &lt;/&gt;</p>
+                    <br>
+                    <br>
+                    <p>&lt;&gt; Fevereiro 2023 - Dezembro 2024</p>
+                    <p>Suporte Técnico de Informática.</p>
+                    <p>Mundial Impressoras. &lt;/&gt;</p>
+                    <br>
+                    <br>
+                    <p>{ Junho 2025 - Atual</p>
+                    <p>Atendente de CallCenter.</p>
+                    <p>AEC Centro de Contato S.A. }</p>
+                </div>
+            </section>
+        </div>
     </div>
     <div id="projects-window" style="display: none;">
         <section id="about-projects">
@@ -66,6 +130,17 @@
                 <span>Sorteador</span>
             </button>
         </section>
+        <div id="projects-info" style="display: none;">
+            <h2>Informações do Projeto</h2>
+            <div id="project-details">
+                <h3 id="project-title"></h3>
+                <p id="project-description"></p>
+                <iframe id="project-preview" src="#" frameborder="0" width="100%" height="500px"></iframe>
+                <br>
+                <a id="project-link" href="#" target="_blank">Ver projeto no GitHub.</a>
+                <button id="back-projects">Voltar para projetos.</button>
+            </div>
+        </div>
     </div>
     <div id="buttons">
         <button id="exp-School">Experiências & Escolaridade</button>
