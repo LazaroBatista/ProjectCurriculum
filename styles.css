@@ -181,14 +181,18 @@ button span {
     font-size: 20px;
 }
 
-#PJ1 {
+#project-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 20px;
+}
+
+iframe {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 #back-button {
