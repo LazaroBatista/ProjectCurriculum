@@ -210,3 +210,44 @@ button:active {
     color: white;
     transform: scale(0.45);
 }
+
+@media (max-width: 800px) {
+    #initial-window, #school-window {
+        margin: 20px auto;
+        padding: auto;
+        width: 60vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-container {
+        margin: 0;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-me {
+        margin: 20px 0 0 0;
+        padding: 10px;
+    }
+    #about-me-right {
+        margin: 0;
+        padding: auto;
+    }
+    #about-me-right img {
+        width: 200px;
+        height: auto;
+        margin: 0;
+        padding: auto;
+    }
+    #buttons {
+        margin-top: 320px;
+    }
+    #texts {
+        margin: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
