@@ -20,7 +20,7 @@ Projeto de portfólio interativo que apresenta informações pessoais, escolarid
 
 - Layout responsivo
 - Navegação entre telas de apresentação, escolaridade e projetos
-- Exibição de imagens dos projetos
+- Exibição dos projetos feitos por mim. 
 - Animações suaves em botões
 
 ## Como usar
