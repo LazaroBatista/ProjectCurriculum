@@ -211,12 +211,12 @@ button:active {
     transform: scale(0.45);
 }
 
-@media (max-width: 800px) {
-    #initial-window, #school-window {
+@media (max-width: 450px) {
+    #initial-window {
         margin: 20px auto;
         padding: auto;
-        width: 60vw;
-        height: 60vh;
+        width: 90vw;
+        height: 63vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -242,12 +242,38 @@ button:active {
         margin: 0;
         padding: auto;
     }
+    #contacts {
+        width: 340px;
+        height: auto;
+        margin: 10px 0 0 0;
+        padding: 5px;
+    }
     #buttons {
-        margin-top: 320px;
+        margin: 340px 10px 0 10px;
+        height: auto;
     }
     #texts {
         margin: 20px;
         font-size: 16px;
+        text-align: center;
+    }
+    #school-window {
+        margin: 20px auto;
+        padding: auto;
+        width: 90vw;
+        height: auto;
+    }
+    #about-school {
+        margin: 20px 10px 5px 10px;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-school-info {
+        margin: 0;
+        padding: auto;
         text-align: center;
     }
 }
